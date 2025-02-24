@@ -1,5 +1,10 @@
 Head {
     text-align: left;
+      <style>
+    html, body {
+      cursor: url('cursor.cur'), auto; 
+    }
+    </style>
 }
 
 body {
