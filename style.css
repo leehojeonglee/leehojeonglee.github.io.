@@ -4,12 +4,7 @@ Head {
     html, body {
       cursor: url('cursor.cur'), auto; 
     }
-      p {
-      white-space: pre; /* Preserve spaces and line breaks */
-    }
-    a {
-      text-decoration: none;
-      color: #007bff;
+   
     </style>
 }
 
