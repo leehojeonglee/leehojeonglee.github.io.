@@ -3,6 +3,9 @@ body {
     text-align: center;
     margin: 50px;
     background-color: #f4f4f4;
+
+    cursor: url('custom-cursor.png'), auto;
+
 }
 h1 {
     color: #333;
