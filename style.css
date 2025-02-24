@@ -4,7 +4,7 @@ body {
     margin: 50px;
     background-color: #f4f4f4;
 
-    cursor: url('custom-cursor.png'), auto;
+    cursor: url('cursor.png'), auto;
 
 }
 h1 {
