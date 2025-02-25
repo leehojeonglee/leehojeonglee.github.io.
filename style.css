@@ -14,23 +14,15 @@ a {
     display: inline-block; /* Make the anchor an inline block so it works with the hover effect */
 }
 
-/* Container for the image */
-.image-container {
-    position: absolute;
-    top: 40px; /* Position the image below the link */
-    left: 0;
-    opacity: 0; /* Initially hidden */
-    transition: opacity 0.3s ease, transform 0.3s ease; /* Smooth transition */
-    pointer-events: none; /* Ensures the image doesn't block interaction with the link */
+.tooltip {
+    text-decoration:none;
+    position:relative;
 }
-
-/* Image styling */
-.hover-image {
-    width: 200px; /* Set the image size */
+.tooltip span {
+    display:none;
 }
-
-/* Show and scale the image when hovering over the link */
-.hover-link:hover + .image-container {
-    opacity: 1; /* Show image */
-    transform: scale(1.2); /* Slightly enlarge the image */
+.tooltip:hover span {
+    display:block;
+    position:fixed;
+    overflow:hidden;
 }
