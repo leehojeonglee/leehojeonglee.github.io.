@@ -14,35 +14,35 @@
             padding-right: 10px;
             text-decoration: none;
             color: #007bff;
-            position: relative; /* Add position relative to ensure links are clickable */
+            position: relative;
         }
 
         /* Container to position the image */
         .image-container {
             position: absolute;
-            top: 20px; /* Adjust based on your needs */
+            top: 10px; /* Adjust the top position based on your layout */
             left: 0;
-            opacity: 0;
+            opacity: 0; /* Initially hide the image */
             transition: opacity 0.3s ease, transform 0.3s ease;
             pointer-events: none; /* Allow clicks to pass through the image container */
         }
 
-        /* Image that will pop out */
+        /* Image styling */
         .hover-image {
-            width: 200px; /* Adjust the size of your image */
+            width: 200px; /* Adjust the size of the image */
         }
 
-        /* Show and scale the image when hovering over the text */
+        /* Show and scale the image when hovering over the link */
         .hover-link:hover + .image-container {
-            opacity: 1;
-            transform: scale(1.2);
+            opacity: 1; /* Make image visible */
+            transform: scale(1.2); /* Scale image */
         }
     </style>
 </head>
 <body>
 
     <p>
-        <a href="#">Bibliothekk</a>
+        <a href="#">Bibliothek</a>
         <a href="https://leehojeonglee.github.io/leehojeonglee.github.io./flyer_Offenburg.jpg" class="hover-link">die sprachlichen Probleme der Phantastik</a>
         <div class="image-container">
             <img src="flyer_Offenburg.jpg" alt="Image" class="hover-image">
