@@ -26,7 +26,7 @@ a {
     position:fixed;
     overflow:hidden;
 }
-<img src="my_file.png" style="animation: move 5s ease-in-out infinite;">
+<img src="cursor.cur" style="animation: move 5s ease-in-out infinite;">
 @keyframes move {
   from {left: 0;}
   to {left: 110px;}
