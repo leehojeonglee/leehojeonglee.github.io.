@@ -12,7 +12,8 @@ P.footer {
 }
     
 a {
-    padding-right: 10px;
+   font-size: 16px; 
+   padding-right: 10px;
     text-decoration: none;
     color: #007bff;
     position: relative; /* Ensure the links are positioned correctly for hover effect */
