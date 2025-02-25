@@ -26,4 +26,7 @@ a {
     position:fixed;
     overflow:hidden;
 }
-
+.floating-image {
+    width: 18px;  /* Set the width */
+    height: auto; /* Keep aspect ratio intact */
+}
