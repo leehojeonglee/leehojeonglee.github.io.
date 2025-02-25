@@ -1,39 +1,29 @@
-Head {
-    text-align: left;
-      <style>
-    html, body {
-      cursor: url('cursor.cur'), auto; 
-    }
-   
-    </style>
-}
-
 body {
-    font-family: Arial, sans-serif;
-    text-align: left;
-    margin: 30px;
-    background-color: #f4f4f4;
+    cursor: url('cursor.cur'), auto;
 }
-h1 {
-    color: #333;
+
+a {
+    padding-right: 10px;
+    text-decoration: none;
+    color: #007bff;
 }
-/* Basic styling for the image */
+
+/* Position the image container */
 .image-container {
-  position: relative;
-  display: inline-block;
+    position: absolute;
+    top: 50px; /* Adjust the top position based on your layout */
+    left: 0;
+    opacity: 0; /* Initially hide the image */
+    transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
+/* Image styling */
 .hover-image {
-  width: 300px; /* adjust as needed */
-  transition: transform 0.3s ease; /* smooth transition */
-  opacity: 0; /* Initially hidden */
-  position: absolute;
-  top: 0;
-  left: 0;
+    width: 200px; /* Set the size of the image */
 }
 
-/* Show the image and scale it when hovering over the text */
-.hover-link:hover + .image-container .hover-image {
-  opacity: 1; /* Show image */
-  transform: scale(1.2); /* Increase the size of the image */
+/* When hovering over the text, show and enlarge the image */
+.hover-link:hover + .image-container {
+    opacity: 1; /* Show the image */
+    transform: scale(1.2); /* Enlarge the image */
 }
