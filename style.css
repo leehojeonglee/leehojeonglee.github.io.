@@ -8,13 +8,15 @@ a {
     color: #007bff;
 }
 
-/* Position the image container */
+
+/* Container to position the image */
 .image-container {
     position: absolute;
-    top: 50px; /* Adjust the top position based on your layout */
+    top: 20px; /* Adjust based on your needs */
     left: 0;
-    opacity: 0; /* Initially hide the image */
+    opacity: 0;
     transition: opacity 0.3s ease, transform 0.3s ease;
+    pointer-events: none; /* This makes sure the image doesn't block interactions with the link */
 }
 
 /* Image styling */
