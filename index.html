@@ -6,8 +6,39 @@
     <title>Hojeong Lee</title>
     <link rel="stylesheet" href="style.css">
     <style>
-        body {
-            cursor: url('cursor.cur'), auto; /* Add path to your custom cursor */
+            body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden; /* Prevents scrollbars */
+        }
+
+        /* Floating image container */
+        .floating-image {
+            position: absolute;
+            top: 50%; /* Start in the middle of the screen vertically */
+            left: 50%; /* Start in the middle of the screen horizontally */
+            transform: translate(-50%, -50%); /* Center the image exactly at the middle */
+            width: 150px; /* Adjust size of the image */
+            animation: float 10s infinite linear; /* Animation for floating effect */
+        }
+
+        /* Animation to make the image float around */
+        @keyframes float {
+            0% {
+                transform: translate(-50%, -50%) translateX(0) translateY(0);
+            }
+            25% {
+                transform: translate(-50%, -50%) translateX(300px) translateY(200px);
+            }
+            50% {
+                transform: translate(-50%, -50%) translateX(-300px) translateY(100px);
+            }
+            75% {
+                transform: translate(-50%, -50%) translateX(200px) translateY(-150px);
+            }
+            100% {
+                transform: translate(-50%, -50%) translateX(0) translateY(0);
+            }
         }
 
         a {
