@@ -2,35 +2,35 @@ body {
     cursor: url('cursor.cur'), auto;
 }
 
+p {
+  margin-right: 50px;
+  margin-left: 50px;
+    
 a {
     padding-right: 10px;
     text-decoration: none;
     color: #007bff;
-    position: relative;
+    position: relative; /* Ensure the links are positioned correctly for hover effect */
+    display: inline-block; /* Make the anchor an inline block so it works with the hover effect */
 }
 
-p {
-  margin-right: 50px;
-  margin-left: 50px;
-}
-
-/* Container to position the image */
+/* Container for the image */
 .image-container {
     position: absolute;
-    top: 10px; /* Adjust based on your layout */
+    top: 40px; /* Position the image below the link */
     left: 0;
-    opacity: 0; /* Initially hide the image */
-    transition: opacity 0.3s ease, transform 0.3s ease;
-    pointer-events: none; /* Allow clicks to pass through the image container */
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.3s ease, transform 0.3s ease; /* Smooth transition */
+    pointer-events: none; /* Ensures the image doesn't block interaction with the link */
 }
 
 /* Image styling */
 .hover-image {
-    width: 200px; /* Set the size of the image */
+    width: 200px; /* Set the image size */
 }
 
-/* Show and scale the image when hovering over the text */
+/* Show and scale the image when hovering over the link */
 .hover-link:hover + .image-container {
     opacity: 1; /* Show image */
-    transform: scale(1.2); /* Enlarge image */
+    transform: scale(1.2); /* Slightly enlarge the image */
 }
