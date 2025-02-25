@@ -6,7 +6,7 @@
     <title>Hojeong Lee</title>
     <link rel="stylesheet" href="style.css">
     <style>
-      body {
+        body {
             cursor: url('cursor.cur'), auto; /* Add path to your custom cursor */
         }
 
@@ -14,15 +14,17 @@
             padding-right: 10px;
             text-decoration: none;
             color: #007bff;
+            position: relative; /* Add position relative to ensure links are clickable */
         }
 
         /* Container to position the image */
         .image-container {
             position: absolute;
-            top: 400px; /* Adjust based on your needs */
+            top: 20px; /* Adjust based on your needs */
             left: 0;
             opacity: 0;
             transition: opacity 0.3s ease, transform 0.3s ease;
+            pointer-events: none; /* Allow clicks to pass through the image container */
         }
 
         /* Image that will pop out */
@@ -40,19 +42,19 @@
 <body>
 
     <p>
-<a href="#">Bibliothek</a>
-        <a href="https://leehojeonglee.github.io/leehojeonglee.github.io./flyer_Offenburg.jpg" class="hover-link">die sprachlichen Probleme der Phantastik</a>
+        <a href="#">Bibliothekk</a>
+        <a href="https://leehojeonglee.github.io/leehojeonglee.github.io/flyer_Offenburg.jpg" class="hover-link">die sprachlichen Probleme der Phantastik</a>
         <div class="image-container">
             <img src="flyer_Offenburg.jpg" alt="Image" class="hover-image">
         </div>
-   <a href="https://leehojeonglee.github.io/leehojeonglee.github.io.
-/270324.pdf" target="_blank">Two Songs/Zwei Lieder</a>
-    <a href="https://leehojeonglee.github.io/leehojeonglee.github.io.
-/Davor, danach und alles zwischen_Lee.gif" target="_blank">Davor, danach und alles dazwischen</a> 
-</p>
+        <a href="https://leehojeonglee.github.io/leehojeonglee.github.io/270324.pdf" target="_blank">Two Songs/Zwei Lieder</a>
+        <a href="https://leehojeonglee.github.io/leehojeonglee.github.io/Davor, danach und alles zwischen_Lee.gif" target="_blank">Davor, danach und alles dazwischen</a>
+    </p>
+
 </body>
 <footer>
-     <p>leehojeonglee@gmail.com</p>
-     <p>Copyright @2025 Hojeong Lee All rights reserved.</p>
+    <p>leehojeonglee@gmail.com</p>
+    <p>Copyright @2025 Hojeong Lee All rights reserved.</p>
 </footer>
 </html>
+
