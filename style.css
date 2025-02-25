@@ -3,9 +3,9 @@ body {
 }
 
 p {
-  font-size: 21px;
-  margin-right: 20px;
-  margin-left: 20px;
+  font-size: 18px;
+  margin-right: 18px;
+  margin-left: 18px;
 }
 
 P.footer {
@@ -13,7 +13,7 @@ P.footer {
 }
     
 a {
-   padding-right: 10px;
+   padding-right: 8px;
     text-decoration: none;
     color: #007bff;
     position: relative; /* Ensure the links are positioned correctly for hover effect */
