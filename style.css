@@ -18,12 +18,22 @@ h1 {
     color: #333;
 }
 /* Basic styling for the image */
-.hover-image {
-  transition: transform 0.3s ease; /* smooth transition */
-  width: 300px; /* adjust as needed */
+.image-container {
+  position: relative;
+  display: inline-block;
 }
 
-/* Scale the image when hovering */
-a:hover .hover-image {
-  transform: scale(1.2); /* Increase the size to 120% */
+.hover-image {
+  width: 300px; /* adjust as needed */
+  transition: transform 0.3s ease; /* smooth transition */
+  opacity: 0; /* Initially hidden */
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* Show the image and scale it when hovering over the text */
+.hover-link:hover + .image-container .hover-image {
+  opacity: 1; /* Show image */
+  transform: scale(1.2); /* Increase the size of the image */
 }
