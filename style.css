@@ -6,17 +6,17 @@ a {
     padding-right: 10px;
     text-decoration: none;
     color: #007bff;
+    position: relative;
 }
-
 
 /* Container to position the image */
 .image-container {
     position: absolute;
-    top: 20px; /* Adjust based on your needs */
+    top: 10px; /* Adjust based on your layout */
     left: 0;
-    opacity: 0;
+    opacity: 0; /* Initially hide the image */
     transition: opacity 0.3s ease, transform 0.3s ease;
-    pointer-events: none; /* This makes sure the image doesn't block interactions with the link */
+    pointer-events: none; /* Allow clicks to pass through the image container */
 }
 
 /* Image styling */
@@ -24,8 +24,8 @@ a {
     width: 200px; /* Set the size of the image */
 }
 
-/* When hovering over the text, show and enlarge the image */
+/* Show and scale the image when hovering over the text */
 .hover-link:hover + .image-container {
-    opacity: 1; /* Show the image */
-    transform: scale(1.2); /* Enlarge the image */
+    opacity: 1; /* Show image */
+    transform: scale(1.2); /* Enlarge image */
 }
