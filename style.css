@@ -9,6 +9,11 @@ a {
     position: relative;
 }
 
+p {
+  margin-right: 50px;
+  margin-left: 50px;
+}
+
 /* Container to position the image */
 .image-container {
     position: absolute;
