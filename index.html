@@ -6,26 +6,45 @@
     <title>Hojeong Lee</title>
     <link rel="stylesheet" href="style.css">
     <style>
-     body {
+      body {
             cursor: url('cursor.cur'), auto; /* Add path to your custom cursor */
-        
+        }
+
         a {
-padding-right: 10px; /* Adds space inside the link */
-          text-decoration: none;
-          color: #007bff;
-    }
-     }
+            padding-right: 10px;
+            text-decoration: none;
+            color: #007bff;
+        }
+
+        /* Container to position the image */
+        .image-container {
+            position: absolute;
+            top: 50px; /* Adjust based on your needs */
+            left: 0;
+            opacity: 0;
+            transition: opacity 0.3s ease, transform 0.3s ease;
+        }
+
+        /* Image that will pop out */
+        .hover-image {
+            width: 200px; /* Adjust the size of your image */
+        }
+
+        /* Show and scale the image when hovering over the text */
+        .hover-link:hover + .image-container {
+            opacity: 1;
+            transform: scale(1.2);
+        }
     </style>
 </head>
 <body>
 
     <p>
-<a>Bibliothekk</a>
-<a href="https://leehojeonglee.github.io/leehojeonglee.github.io.
-/flyer_Offenburg.jpg" class="hover-link">die sprachlichen Probleme der Phantastik</a>
-  <div class="image-container">
-    <img src="flyer_Offenburg.jpg" alt="Image" class="hover-image">
-  </div>
+<a href="#">Bibliothekk</a>
+        <a href="https://leehojeonglee.github.io/leehojeonglee.github.io/flyer_Offenburg.jpg" class="hover-link">die sprachlichen Probleme der Phantastik</a>
+        <div class="image-container">
+            <img src="flyer_Offenburg.jpg" alt="Image" class="hover-image">
+        </div>
    <a href="https://leehojeonglee.github.io/leehojeonglee.github.io.
 /270324.pdf" target="_blank">Two Songs/Zwei Lieder</a>
     <a href="https://leehojeonglee.github.io/leehojeonglee.github.io.
