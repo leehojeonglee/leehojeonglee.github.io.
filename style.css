@@ -13,10 +13,17 @@ body {
     text-align: left;
     margin: 30px;
     background-color: #f4f4f4;
-
-  
-
 }
 h1 {
     color: #333;
+}
+/* Basic styling for the image */
+.hover-image {
+  transition: transform 0.3s ease; /* smooth transition */
+  width: 300px; /* adjust as needed */
+}
+
+/* Scale the image when hovering */
+a:hover .hover-image {
+  transform: scale(1.2); /* Increase the size to 120% */
 }
