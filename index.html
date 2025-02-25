@@ -15,13 +15,14 @@
             text-decoration: none;
             color: #007bff;
             position: relative;
+            display: inline-block; /* Ensures the anchor is an inline block for hover */
         }
 
         /* Container to position the image */
         .image-container {
             position: absolute;
             top: 30px; /* Adjust the top position based on your layout */
-            left: 400;
+            left: 0;
             opacity: 0; /* Initially hide the image */
             transition: opacity 0.3s ease, transform 0.3s ease;
             pointer-events: none; /* Allow clicks to pass through the image container */
@@ -44,6 +45,7 @@
     <p>
         <a href="#">Bibliothek</a>
         <a href="#" class="hover-link">die sprachlichen Probleme der Phantastik</a>
+        <!-- Image container -->
         <div class="image-container">
             <img src="flyer_Offenburg.jpg" alt="Image" class="hover-image">
         </div>
